@@ -14,5 +14,7 @@ public class SpringLearningApplication {
         ApplicationContext context = SpringApplication.run(SpringLearningApplication.class, args);
 
         ComponentDAO componentDAO = context.getBean(ComponentDAO.class);
+
+        LOGGER.info("componentDAO instance: {}", componentDAO);
     }
 }
