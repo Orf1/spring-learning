@@ -13,8 +13,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework:spring-core'
+    implementation 'org.springframework:spring-context'
+    implementation 'org.slf4j:slf4j-api'
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'javax.inject:javax.inject:1'
+    //testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
